@@ -1,0 +1,1208 @@
+h1, p, li, a, fieldset {
+    font-family: Roboto, sans-serif;
+    color: #594545;
+}
+
+#blankTop {
+    height: 10vh;
+}
+      
+.listNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navItem a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectedMenuButton {
+    filter:opacity(50%);
+}
+
+.unselectedMenuButton {
+    filter:opacity(100%);
+}
+
+body {
+    background-color: #FFF8EA;
+    margin: 0;
+}
+
+.contHome {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.contContact {
+    display: flex;
+    flex-direction: row;
+}
+
+.textLandingDetails {
+    font-family: Patua One, serif;
+}
+
+#contLandingContact{
+    background-color: #594545;
+    border-radius: 20px;
+}
+
+#contLandingAddress {
+    border-radius: 20px;
+    border: solid 2px #594545;
+}
+
+.textHeading {
+    font-family: Patua One, serif;
+    font-weight: 400;
+    color:#594545;
+}
+
+ul {
+    list-style: none;
+}
+
+.contMenuPage {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    padding-bottom: 0;
+}
+
+.contMenuPageImg {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.hrMenuHeading {
+    border: solid 1px #594545;
+}
+
+.buttonPlaylist:hover{
+    background-color: #815B5B;
+}
+
+.contJobsPage1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.contJobsGallery {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.contJobsPane:hover {
+    background-color: #815B5B; 
+  }
+
+.imgJobs {
+    width: 100%;
+}
+
+
+
+.contJobsPane:hover .imgJobs {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.textJobDesc {
+    margin-top: 0px;
+}
+
+.contFormFields {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+fieldset {
+    width: 80%;
+    border: 0;
+    margin-top: 0px;
+    padding-left: 0;
+}
+    
+#headingFormsPage {
+    margin-top: 7%;
+}
+    
+#submitButton:hover {
+    background-color: #9E7676;
+}
+
+#titleJob {
+    font-weight: 700;
+}
+  
+.contSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hamburgerBar{
+    display: block;
+    width: 7vw;
+    height: 1vw;
+    margin: 1vh auto;
+    background-color: white;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    body, .contBodyContent {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        background-color: #815B5B;
+        height: 10%;
+        display: flex;
+        align-items: center;  
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 5px 25px -15px rgba(0,0,0,0.75);
+        z-index: 1;
+        top: 0;
+    } 
+
+
+    .contNavLogo {
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        height: 10vw;
+        width: auto;
+        margin: auto;
+    }
+
+    .contHamburger{
+        display: block;
+        width: 20vw;
+    }
+
+    .contHamburger.active .hamburgerBar:nth-child(2){
+        opacity: 0;
+    }
+
+    .contHamburger.active .hamburgerBar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .contHamburger.active .hamburgerBar:nth-child(3){
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .contNav {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: #9E7676;
+        width: 50vw; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .iconNav {
+        width: 10vw;
+        margin-top: 10vw;
+        height: auto;
+        padding-left: 6vw;
+    }
+
+    .contNav.active{
+        position: fixed;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: #9E7676;
+        width: 50vw; 
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: 0;
+    } 
+
+    #menuHome {
+        margin-top: 15vw;
+    }
+
+    .iconNav:hover {
+        filter: opacity(50%);
+    }
+
+    .listNav {
+        width: 50vw; 
+        height: 10vw;
+    }
+
+    
+    .navItem a {
+        height: 13vh;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navTexts{
+        display: flex;
+        margin-top: 15vw;
+        margin-left: 3vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 6vw;
+    }
+
+    #iconMusic {
+        width: 10vw;
+        margin-top: 10vw;
+        height: 8vw;
+    }
+
+    .contHome {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .contHomeCol1, .contHomeCol2 {
+        width: 90vw;
+    }
+
+    .contHomeCol2 {
+        order: -1;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        margin-top: -3vh;
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    .contHomeCol1 {
+        margin: auto;
+        margin-top: -3vh;
+    }
+
+    #imgLanding {
+        width: 70vw;
+        padding-left: 2%;
+        margin-top: 7vh;
+    }
+
+    .contContentPage {
+        overflow: hidden;
+        padding-top: 5%;
+    }
+
+    .contFooter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 1%;
+        background-color: #815B5B;
+        text-align: center;
+        bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #headingLanding {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 11vw;
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    .textLandingDesc {
+        font-size: 5vw;
+        text-align: center;
+        width: 80vw;
+        margin: auto;
+        margin-top: 3vh;
+    }
+
+    .contContact {
+        margin: auto;
+        margin-top: 5vh;
+        width: 90vw;
+        height: fit-content;
+    }
+
+    .contContact ul li {
+        margin: auto;
+    }
+
+    .listContact, .listItems {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5vw;
+    }
+
+    #iconContact {
+        margin-right: 1vw;
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .buttonMenu {
+        position: absolute; 
+        top: 60vw; 
+        right: 20vw;
+        background-color: #815B5B;
+        width: 20vw; 
+        height: 20vw; 
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    #textButtonMenu {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 3vw;
+        font-family: 'Patua One', serif;
+    }
+
+    .buttonMenuOutline {
+        width: 87%; 
+        height: 87%; 
+        border-radius: 50%;
+        border: 1px #FFFFFF solid;
+        margin: auto;
+        margin-top: 6%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listItems {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        font-weight: 500;
+        margin-top: 2vh;
+    }
+
+    .contMenuPage {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .contMenuPageImg {
+        order: -1; 
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contMenuPageText {
+        width: 80vw;
+        margin: auto;
+        margin-top: 2vh;
+    }
+
+    #headingCoffee {
+        margin-top: -2%;
+    }
+
+    #imgMenu1 {
+        width: 80vw;
+        margin: auto;
+        margin-left: 5vw;
+        margin-top: 7vh;
+    }
+
+    #imgMenu2 {
+        width: 90vw;
+    }
+
+    .headingMenu {
+        font-size: 8vw;
+        margin-bottom: 2vw;
+        width: 90vw;
+    }
+
+    table {
+        font-family: 'Roboto', sans-serif;
+        color: #594545;
+        font-size: 5vw;
+        margin-top: 0;
+        width:  80vw;
+        line-height: 5vh;
+    }
+
+    #headingSandwiches {
+        margin-top: -2%;
+    }
+
+    .tableCoffee {
+        width: 80vw;
+    }
+
+    .hrCoffee {
+        width: 80vw;
+    }
+
+    .menuItem {
+        margin-top: 2vh;
+        width: 50vw;
+    }
+
+    .menuPrice {
+        width: 20%;
+    }
+
+    .lastElement {
+        margin-bottom: 10vh;
+    }
+
+    #music {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("assets/music-bg-portrait.png");
+        background-size: cover;
+        margin-top: 10vh;
+    }
+
+    .contMusicContent {
+        width: 85vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headingMusic {
+        margin-bottom: 2vh;
+        font-size: 10vw;
+        font-family: 'Patua One', serif;
+        color: #594545;
+        font-weight: 300;
+        margin-top: 2vh;
+    }
+
+    .bodyMusic {
+        margin-top: -4%;
+        font-size: 6.5vw;
+        width: 80vw;
+    }
+
+    .buttonPlaylist {
+        background-color: #594545;
+        color: white;
+        padding: 3vw 5vw;
+        border: none;
+        border-radius: 15px;
+        font-family: 'Patua One', serif;
+        cursor: pointer; 
+        text-decoration: none;
+        display: inline-block; 
+        font-size: 4vw;
+        font-weight: 200;
+        align-self: flex-start;
+        margin-bottom: 10vh;
+    }
+
+    .headingJobs {
+        margin-bottom: 2vh;
+        font-size: 9.5vw;
+        font-family: 'Patua One', serif;
+        color: #594545;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .contTextJobs {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .contJobsPane {
+        width: 40vw;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin: auto;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-grow: 0;
+        margin-top: 5%;
+        font-size: 4vw;
+    }
+
+    .contJobsPane:hover .textJobTitle,
+    .contJobsPane:hover .textJobDesc {
+        color: #FFFFFF; 
+        font-size: 4vw;
+    }
+
+    .contJobsPane:hover {
+        background-color: #815B5B; 
+
+    }
+
+    .contJobsPane:hover .textJobTitle {
+        margin-top: 3.4vh;
+        font-size: 5.8vw;
+    }
+
+    .textJobTitle {
+        font-family: 'Patua One', serif;
+        font-weight: 300;
+        color: #594545;
+        font-size: 6vw;
+        margin-bottom: 1px;
+        margin-top: 2vh;
+    }
+
+    .contForms {
+        width: 80vw;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin: auto;
+        margin-bottom: 5vh;
+        font-family: 'Roboto', sans-serif;
+        color: #594545;
+        padding-bottom: 2%;
+    }
+
+    #headingFormsPage {
+        margin-bottom: 3vh;
+        font-size: 10vw;
+    }
+
+    .fieldTwoCols {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inputName, #inputEmail, #inputContact {
+        border-radius: 5px;
+        height: 2vh;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        padding: 2%;
+        margin: 2%;
+        margin-top: 1px;
+        width: 85%;
+    }
+
+    #titleJob {
+        padding-top: 1vh;
+    }
+
+    .jobPositionTitle {
+        font-size: 4vw;
+    }
+
+    #headerName {
+        padding-top: 16px;
+    }
+
+    input {
+        border: solid 2px hsl(0, 13%, 58%);
+    }
+
+    input:hover {
+        border: solid 2px #594545;
+    }
+
+    input[type="file"] {
+        border: 0;
+        font-size: 3.5vw;
+        font-family: 'Roboto';
+    }
+
+    #submitButton {
+        background-color: #815B5B;
+        color: #FFFFFF;
+        font-family: 'Rubik', sans-serif;
+        font-size: 4vw;
+        border: 0;
+        border-radius: 5px;
+        margin-top: 5vh;
+        box-shadow: -1px 6px 16px -2px;
+        margin-bottom: 5vh;
+        padding: 2vw 15vw;
+    }
+
+    .formFieldHeader {
+        font-size: 4.5vw;
+        margin-bottom: 1vh;
+    }
+
+    #textFooter {
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        line-height: 3vh;
+        font-size: 3vw;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .hambuger {
+        display: none;
+    }
+
+    .navTexts {
+        display: none;
+    }
+
+    .contBodyContent {
+        padding-left: 5%;
+    }
+    
+    .contHome {
+        width: 92vw;
+        height: 90vh;
+        margin-top: -5vw;
+    }
+
+    body {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .contNavLogo{
+        background-color: #815B5B;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: space-between; 
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 5px 25px -15px rgba(0,0,0,0.75);
+        z-index: 1;
+        top: 0;
+    } 
+    
+    .logo{
+        padding-top: 2vh;
+        height: 60%;
+        width: auto;
+    }
+    
+    .contNav {
+        background-color: #9E7676;
+        width: 6%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: fixed;
+    }
+
+    .iconNav {
+        width: 40%;
+        margin-top: 80%;
+        height: 100%;
+    }
+    
+    .iconNav:hover {
+        width: 40%;
+        margin-top: 80%;
+        height: 100%;
+        filter:opacity(50%);
+    }
+    
+    .contContentPage {
+        overflow: hidden;
+        padding-top: 5%;
+    }
+
+
+    .contHomeCol1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 4%;
+        margin-top: 1%;
+    }
+    
+    .contHomeCol2 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        overflow: hidden;
+        padding-left: 5%;
+        width: 40%;
+    }
+    
+    #imgLanding {
+        height: 85%;
+        width: 90%;
+        padding-top: 12%;
+        padding-left: 2%;
+    }
+    
+    #textFooter {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        line-height: 25px;
+    }
+    
+    .contFooter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 10%;
+        padding-bottom: 8px;
+        background-color: #815B5B;
+        height: 15%;
+        text-align: center;
+        bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    #headingLanding {
+        margin-left: 3%;
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 5vw;
+    }
+    
+    .textLandingDesc {
+        font-size: 25px;
+        margin-left: 25px;
+    }
+    
+    #listLanding {
+        padding: 0;
+        margin-top: 0;
+        margin-left: 6%;
+        margin-bottom: 6%;
+    }
+    
+    #iconContact {
+        margin-right: 2%;
+        height: 27px;
+    }
+    
+    #listContact {
+        font-size: 13px;
+        margin: 0;
+        margin-top: 1vw;
+        padding-left: 25px;
+    }
+    
+    .contContact {
+        width: 100%;
+        margin: 2%;
+    }
+    
+    #textContact {
+        color: #FFFFFF;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    
+    #textAddress {
+        color: #594545;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    
+    .buttonMenu {
+        position: absolute; 
+        top: 60%; 
+        transform: translateX(250%);
+        background-color: #815B5B;
+        width: 150px; 
+        height: 150px; 
+        border-radius: 50%;
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #textButtonMenu {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 23px;
+        font-family: Patua one, serif;
+        margin-top: 0;
+        line-height: 25px;
+    }
+    
+    #textButtonMenu:hover {
+        filter:opacity(50%);
+        font-size: 26px;
+    }
+    
+    .buttonMenuOutline {
+        width: 130px; 
+        height: 130px; 
+        border-radius: 50%;
+        border: 1px #FFFFFF solid;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .listItems {
+        font-family: Roboto, sans-serif;
+        font-size: 2em;
+        margin-top: 15px;
+        width: 50vw;
+    }
+    
+    .contMenuPage{
+        width: 100%;
+        margin-top: 0;
+        margin-left: 12px;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    
+    .contMenuPageText {
+        width: 35%;
+        margin-left: 5%;
+    }
+    
+    #contMenuImgCoffee {
+        width: 55%;
+        padding-left: 15%;
+        padding-top: 2%;
+    }
+    
+    #contMenuImgMuffin {
+        width: 45%;
+        padding-top: 4%;
+        padding-right: 5%;
+        padding-bottom: 150px;
+    }
+    
+    
+    #imgMenu2 {
+        width: 110%;
+    }
+    
+    #imgMenu1 {
+        height: 80%;
+        margin-bottom: 0;
+    }
+    
+    .headingMenu {
+        font-size: 62px;
+        margin-bottom: 12px;
+        margin-top: 1%;
+    }
+    
+    
+    table {
+        font-family: Roboto, sans-serif;
+        color:#594545;
+        font-size: 29px;
+        margin-top: 0;
+        width:  90%;
+        line-height: 2.5rem;
+    }
+    
+    #headingCoffee {
+        margin-top: 5%;
+    }
+    .tableCoffee {
+        width: 120%;
+    }
+    
+    .hrCoffee {
+        width: 120%;
+    }
+    
+    
+    .menuItem {
+        width: 70%;
+    }
+    
+    .menuPrice {
+        width: 20%;
+    }
+    
+    #music {
+        height: 100vh;
+        background-image: url("assets/music-bg.png");
+        background-size: cover;
+    }
+
+    .contMusicContent {
+        height: 100%;
+    }
+    
+    .contMusicContent {
+        margin-left: 5%;
+    }
+    
+    .headingMusic {
+        margin-bottom: 10px;
+        font-size: 5em;
+        font-family: Patua One, serif;
+        color: #594545;
+        font-weight: 300;
+    }
+    
+    .bodyMusic {
+        margin-top: 0;
+        font-size: 1.4rem;
+    }
+    
+    
+    .buttonPlaylist {
+        background-color: #594545;
+        color: white;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 20px;
+        font-family:  Patua One, serif;
+        cursor: pointer; 
+        text-decoration: none;
+        display: inline-block; 
+        font-size: 27px;
+        font-weight: 200;
+        margin-top: 2%;
+    }
+
+    .headingJobs {
+        margin-bottom: 10px;
+        font-size: 4em;
+        font-family: Patua One, serif;
+        color: #594545;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 2%;
+    }
+    
+    .contJobsPane {
+        width: 23%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin: auto;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-grow: 0;
+    }
+
+    .textJobDesc {
+        font-size: 6vw;
+        margin-bottom: 5vh;
+    }
+    
+    .contJobsPane:hover .textJobTitle,
+    .contJobsPane:hover .textJobDesc {
+      color: #FFFFFF; 
+      font-size: 18px;
+    }
+    
+    .contJobsPane:hover .textJobTitle {
+        font-size: 25px;
+        margin-top: 13%;
+    }
+    
+    .textJobTitle {
+        font-family: Patua One, serif;
+        font-weight: 300;
+        color:#594545;
+        font-size: 22px;
+        margin-bottom: 1px;
+        margin-top: 7px;
+    }
+    
+    .contTextJobs {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    .textApplication {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5%;
+    }
+    
+    .contForms{
+        width: 75%;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin: auto;
+        margin-bottom: 5%;
+        font-family: Roboto, sans-serif;
+        color: #594545;
+        padding-bottom: 2%;
+    }
+    
+    #headingFormsPage {
+        margin-bottom: 5px;
+    }
+    
+    .inputText {
+        border-radius: 10px;
+        height: 20px;
+        font-family: Roboto, sans-serif;
+        font-size: 17px;
+        padding: 7px;
+        margin: 2%;
+        margin-top: 1px;
+    }
+    
+    #headerName {
+        padding-top: 16px;
+    }
+    
+    
+    .jobPositionTitle {
+        font-size: 18px;
+    }
+    
+    .textJobDesc {
+        font-size: 1rem;
+    }
+    
+    .fieldName {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #inputName {
+    width: 92%;
+    margin-left: 0;
+    }
+
+    .fieldTwoCols {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    }
+
+    #fieldEmail {
+    width: 65%;
+    }
+
+
+    #inputEmail {
+    width: 95%;
+    margin: 0;
+    }
+
+    #fieldContact {
+    width: 58%;
+    }
+
+    #inputContact {
+    width: 83%;
+    margin-left: 0;
+    }
+
+    
+    input {
+        border: solid 2px hsl(0, 13%, 58%);
+    }
+    
+    input:hover {
+        border: solid 2px #594545;
+    }
+    
+    input[type="file"] {
+        border: 0;
+        font-size: 15px;
+        font-family: Roboto;
+    }
+    
+    #submitButton {
+        background-color: #815B5B;
+        color: #FFFFFF;
+        font-family: Rubik, sans-serif;
+        font-size: 15px;
+        border: 0;
+        border-radius: 5px;
+        padding: 7px  60px;
+        margin-top: 20px;
+        box-shadow: -1px 6px 16px -2px rgba(0,0,0,0.28);
+    }
+
+    .formFieldHeader {
+        font-size: 17px;
+        margin-bottom: 1px;
+    }
+
+    #textFooter {
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        line-height: 3vh;
+        font-size: 0.8rem;
+    }
+    
+}

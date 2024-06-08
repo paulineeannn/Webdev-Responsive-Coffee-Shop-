@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jake's Coffee Shop">
+    <meta name="keyword" content="Coffee Shop">
+    <meta name="author" content="Pauline Ann P. Bautista">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake's Coffee Shop</title>
+
+    <link href="./styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">       
+</head>
+
+<body>
+    <header>
+        <div class="contNav">
+            <ul class="listNav">
+                <li class="navItem" id="menuHome"><a href="#home"><img class="iconNav" src="./assets/home.svg"><h2 class="navTexts">Home</h2></a></li>
+                <li class="navItem"><a href="#menu"><img class="iconNav" src="./assets/menu.svg"><h2 class="navTexts">Menu</h2></a></li>
+                <li class="navItem"><a href="#music"><img class="iconNav" id="iconMusic" src="./assets/music.svg"><h2 class="navTexts">Music</h2></a></li>
+                <li class="navItem"><a href="#jobs"><img class="iconNav" src="./assets/jobs.svg"><h2 class="navTexts">Jobs</h2></a></li>
+            </ul>
+        </div>
+    
+        <div class="contHamburger">
+            <span class="hamburgerBar"></span>
+            <span class="hamburgerBar"></span>
+            <span class="hamburgerBar"></span>
+        </div>
+        
+        <nav class="contNavLogo">
+            <img class="logo" src="./logo3.png" alt="logo">
+        </nav>
+    </header>
+
+    <div class="contBodyContent">
+        <div id="blankTop">
+        </div>
+        <div  class="contHome" id="home">
+            <div class="contHomeCol1">
+                <h2 class="textHeading" id="headingLanding"> Coffee Stories,<br>Bites of Delight</h2>
+                
+                <p class="textLandingDesc">Discover a perfect blend of flavors at Jake's Coffee Shop. Our specialty coffee, handcrafted teas, sandwiches, and organic snacks are made to satisfy your taste buds while you enjoy the soothing melodies of your favorite music.</p>
+
+                <div class="contContact">
+                    <ul id="listContact">
+                        <li class="listItems"><img src="./assets/phone.svg" id="iconContact"/>0115 9324567</li>
+                        <li class="listItems "><img src="./assets/address.svg" id="iconContact"/>23 Pine Road, Nottingham NG1</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div  class="contHomeCol2">
+                <img id="imgLanding" src="./assets/landing-coffee.png" alt="coffee in mug"/>
+                
+                <div class="buttonMenu">
+                    <div class="buttonMenuOutline">
+                        <a href="#menu" id="textButtonMenu">Check<br>our<br>menu!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div  class="contContentPage" id="menu">
+            <div class="contMenuPage" id="contMenuDrinks">
+                <div class="contMenuPageText">
+                    <h2 class="textHeading headingMenu" id="headingCoffee">specialty coffee.</h2>
+                    <hr class="hrCoffee">
+                    <table class="tableCoffee">
+                        <tr>
+                            <td class="menuItem">Americano</td>
+                            <td class="menuPrice">₱120</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Capuccino</td>
+                            <td class="menuPrice">₱120</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Caramel Macchiato</td>
+                            <td class="menuPrice">₱120</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Vanilla Latte</td>
+                            <td class="menuPrice">₱120</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Dark Mocha</td>
+                            <td class="menuPrice">₱120</td>
+                        </tr>
+    
+                    </table>
+    
+    
+                    <h2 class="textHeading headingMenu">tea.</h2>
+                    <hr class="hrCoffee">
+                    <table class="tableCoffee">
+                        <tr>
+                            <td class="menuItem">Matcha</td>
+                            <td class="menuPrice">₱110</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Chamomile</td>
+                            <td class="menuPrice">₱110</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Chai</td>
+                            <td class="menuPrice">₱110</td>
+                        </tr>
+                    </table>
+    
+                </div>
+            
+                <div class="contMenuPageImg" id="contMenuImgCoffee">
+                    <img id="imgMenu1" src="./assets/menu-coffee.png">
+                </div>
+            </div>
+
+
+            <div class="contMenuPage">
+                <div class="contMenuPageImg"  id="contMenuImgMuffin">
+                    <img id="imgMenu2" src="./assets/menu-muffin2.png">
+                </div>
+
+                <div class="contMenuPageText">
+                    <h2 class="textHeading headingMenu" id="headingSandwiches">sandwiches.</h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td class="menuItem">Classic Ham & Cheese</td>
+                            <td class="menuPrice">₱130</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Bacon, Lettuce, Tomato</td>
+                            <td class="menuPrice">₱150</td>
+                        </tr>
+                    </table>
+    
+                    <h2 class="textHeading headingMenu">pastries.</h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td class="menuItem">Blueberry Muffin</td>
+                            <td class="menuPrice">₱80</td>
+                        </tr>
+    
+                        <tr>
+                            <td class="menuItem">Chocolate Croissant</td>
+                            <td class="menuPrice">₱150</td>
+                        </tr>
+                    </table>
+    
+                    <h2 class="textHeading headingMenu">organic snacks.</h2>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td class="menuItem">Mixed Nuts</td>
+                            <td class="menuPrice">₱80</td>
+                        </tr>
+    
+                        <tr class="lastElement">
+                            <td class="menuItem">Granola Bar</td>
+                            <td class="menuPrice ">₱75</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            
+
+        </div>
+
+        <div  class="contContentPage" id="music">
+            <div class="contMusicContent">
+                <h2 class="headingMusic">Your Quiet Escape<br>with a Perfect Cup</h2>
+                <p class="bodyMusic">Craving a quiet escape? Unwind with your favorite<br>tunes in our calm, relaxing atmosphere. <br>We prioritize peaceful ambiance, so you can focus <br>on your chosen soundtrack with a perfect cup of coffee.</p>
+                <a href="https://open.spotify.com/playlist/03tFFBbrsZKwkpfmYQ7cZA?si=5a21d4627d364df0" target="_blank" class="buttonPlaylist">Explore Coffee Break Tunes</a>
+
+            </div>
+        </div>
+
+        <div  class="contContentPage" id="jobs">
+            <div class="contJobsPage1">
+                <p class="headingJobs" id="headingForms">Join our family!</p>
+                <div class="contJobsGallery">
+                    <div class="contJobsPane">
+                        <img src="./assets/jobs-barista.png" class="imgJobs">
+                        <div class="contTextJobs">
+                            <h3 class="textJobTitle">Barista</h3>
+                            <hr class="hrJobs">
+                            <p class="textJobDesc">Be a coffee magician using your brewing skills! Craft & serve up drinks with a smile in our vibrant cafe.</p>    
+                        </div>
+                    </div>
+
+                    
+                    <div class="contJobsPane">
+                        <img src="./assets/jobs-baker.png" class="imgJobs">
+                        <div class="contTextJobs">
+                            <h3 class="textJobTitle">Baker</h3>
+                            <hr class="hrJobs">
+                            <p class="textJobDesc">Whisk up delectable pastries & maintain a clean kitchen environment using your baking expertise.</p>
+                        
+                        </div>
+                    </div>
+
+                    
+                    <div class="contJobsPane">
+                        <img src="./assets/jobs-kitchen.png" class="imgJobs">
+                        <div class="contTextJobs">
+                            <h3 class="textJobTitle">Kitchen Staff</h3>
+                            <hr class="hrJobs">
+                            <p class="textJobDesc">Prepare fresh sandwiches following recipes and keep the kitchen running smoothly in our cafe.</p>
+                        </div>
+                    </div>
+
+                    <div class="contJobsPane">
+                        <img src="./assets/jobs-cashier.png" class="imgJobs">
+                        <div class="contTextJobs">
+                            <h3 class="textJobTitle">Cashier</h3>
+                            <hr class="hrJobs">
+                            <p class="textJobDesc">Be our smile at the register! Welcome customers, process orders, and ensure smooth transactions.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            
+
+            <div class="contJobsPage2">
+                <p class="headingJobs" id="headingFormsPage">Start Your Journey Here!</p>
+
+                <div class="contForms">
+                    <form action="page2.html" method="get" enctype="multipart/form-data">
+
+                        <div class="contFormFields">
+                            <div class="fieldName">
+                                <h2   class="formFieldHeader" id="headerName" >Name*</h2>
+                                <input type="text" name="firstName" maxlength="20" class="inputText" id="inputName" placeholder="Jake dela Cruz" required>   
+                            </div>
+
+                            <div class="fieldTwoCols">
+                                <div class="fieldColumn" id="fieldEmail">
+                                    <h2 class="formFieldHeader">Email*</h2>
+                                    <input type="email" required name="email" maxlength="70" class="inputText" id="inputEmail" placeholder="jakedelacruz@gmail.com" required>
+                                </div>
+                                
+                                <div class="fieldColumn" id="fieldContact">
+                                    <h2 class="formFieldHeader">Contact Number*</h2>
+                                    <input type="tel" required name="contact" maxlength="15" class="inputText" id="inputContact" placeholder="091234567" required>
+                                </div>
+                            </div>
+
+                            <fieldset>
+                                <legend id="titleJob"  class="formFieldHeader">Job Position*</legend>
+                                <input type="radio" id="barista" name="jobPosition" value="barista" required>
+                                <label for="barista"  class="jobPositionTitle">Barista</label><br>
+                                <input type="radio" id="baker" name="jobPosition" value="baker" required>
+                                <label for="baker"  class="jobPositionTitle" >Baker</label><br>
+                                <input type="radio" id="kitchenStaff" name="jobPosition" value="kitchenStaff" required>
+                                <label for="kitchenStaff"  class="jobPositionTitle">Kitchen Staff</label><br>
+                                <input type="radio" id="cashier" name="jobPosition" value="cashier" required>
+                                <label for="cashier"  class="jobPositionTitle">Cashier</label>
+                                </fieldset>
+
+                            <div class="contFieldText fieldOne">
+                                <h2  class="formFieldHeader">CV or Portfolio (PDF File)*</h2>
+                                <input type="file" required name="portfolio" accept=".pdf">
+                            </div>
+
+                            <div class="contSubmit">
+                                <input type="submit" id="submitButton" value="Submit" name="submit">
+                            </div>
+                        
+
+                        </div>                  
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    
+    <footer class="contFooter">
+        <p id="textFooter">Copyright © 2011 Jake's Coffee House<br>jake@jcoffee.com</p>
+
+    </footer>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
