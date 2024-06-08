@@ -3,6 +3,10 @@ h1, p, li, a, fieldset {
     color: #594545;
 }
 
+a {
+    transition: all 0.5s ease;
+}
+
 #blankTop {
     height: 10vh;
 }
@@ -173,6 +177,7 @@ fieldset {
         width: 100vw;
         display: flex;
         flex-direction: column;
+        background-color: #FFF8EA;
     }
 
     header{
@@ -361,8 +366,13 @@ fieldset {
         margin-top: 5vh;
         width: 90vw;
         height: fit-content;
+        justify-content: center;
     }
 
+    ul {
+        padding-left: 0px;
+    }
+    
     .contContact ul li {
         margin: auto;
     }
@@ -642,10 +652,6 @@ fieldset {
 
     input {
         border: solid 2px hsl(0, 13%, 58%);
-    }
-
-    input:hover {
-        border: solid 2px #594545;
     }
 
     input[type="file"] {
